@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace BlueMoonHelpDesk
 {
     public class Startup
@@ -37,6 +38,7 @@ namespace BlueMoonHelpDesk
 
             services.AddIdentity<User, IdentityRole>()
                .AddEntityFrameworkStores<ApplicationDbContext>()
+                
                .AddDefaultTokenProviders();
 
             services.AddControllersWithViews();

@@ -10,6 +10,7 @@ using BlueMoonHelpDesk.Data;
 using BlueMoonHelpDesk.Services;
 using BlueMoonHelpDesk.Extensions.Microsoft.AspNetCore.Mvc;
 using BlueMoonHelpdesk.Extensions.Microsoft.AspNetCore.Mvc;
+using BlueMoonHelpDesk.Utility;
 
 namespace BlueMoonHelpDesk.Controllers
 {
@@ -148,6 +149,21 @@ namespace BlueMoonHelpDesk.Controllers
             return View();
         }
 
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> Register(string returnUrl = null)
+        {
+            if (!_roleManager.RoleExistsAsync(Helper.CustomerService).GetAwaiter().GetResult())
+            {
+                await _roleManager.CreateAsync(new IdentityRole(Helper.Admin));
+                await _roleManager.CreateAsync(new IdentityRole(Helper.Engineer));
+                await _roleManager.CreateAsync(new IdentityRole(Helper.CustomerService));
+
+                ViewData["ReturnUrl"] = returnUrl;
+            }
+
+            return View();
+        }
 
         [HttpPost]
         [AllowAnonymous]
