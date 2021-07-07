@@ -72,35 +72,38 @@
                             <a class="nav-link px-0" asp-controller="Documents" asp-action="Index">Docs</a>
                         </li>
                         <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
-                            <a class="nav-link px-0" href="home-page-1.html">Knowledge Base</a>
+                            <a class="nav-link px-0" asp-controller="Articles" asp-action="Index">Articles</a>
+                        </li>
+                        <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
+                            <a class="nav-link px-0" asp-controller="Faq" asp-action="Index">FAQ</a>
                         </li>
                         <li class="nav-item ml-lg-6 mb-2 mb-lg-0">
                             <a class="nav-link px-0" asp-controller="Contacts" asp-action="Index">Contact</a>
                         </li>
 
                         @*<li class="nav-item dropdown active ml-lg-6 mb-2 mb-lg-0">
-                                <a class="nav-link px-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Pages <i class="fas fa-angle-down small ml-1"></i>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item active" href="home-page-2.html">Home Option</a>
-                                    <a class="dropdown-item" href="home-page-3.html">Home Dark</a>
-                                    <a class="dropdown-item" href="article.html">Article</a>
-                                    <a class="dropdown-item" href="faq.html">FAQ</a>
-                                    <a class="dropdown-item" href="contacts.html">Contacts</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown ml-lg-6 mb-2 mb-lg-0">
-                                <a class="nav-link px-0" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Docs Layouts <i class="fas fa-angle-down small ml-1"></i>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
-                                    <a class="dropdown-item" href="doc-1.html" target="_blank">Docs Layout 1 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-2"></i></a>
-                                    <a class="dropdown-item" href="doc-2.html" target="_blank">Docs Layout 2 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                                    <a class="dropdown-item" href="doc-3.html" target="_blank">Docs Layout 3 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                                    <a class="dropdown-item" href="doc-4.html" target="_blank">Docs Layout 4 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
-                                </div>
-                            </li>*@
+            <a class="nav-link px-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pages <i class="fas fa-angle-down small ml-1"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="home-page-2.html">Home Option</a>
+                <a class="dropdown-item" href="home-page-3.html">Home Dark</a>
+                <a class="dropdown-item" href="article.html">Article</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+                <a class="dropdown-item" href="contacts.html">Contacts</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown ml-lg-6 mb-2 mb-lg-0">
+            <a class="nav-link px-0" href="#" id="navbarDropdown-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Docs Layouts <i class="fas fa-angle-down small ml-1"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown-2">
+                <a class="dropdown-item" href="doc-1.html" target="_blank">Docs Layout 1 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-2"></i></a>
+                <a class="dropdown-item" href="doc-2.html" target="_blank">Docs Layout 2 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
+                <a class="dropdown-item" href="doc-3.html" target="_blank">Docs Layout 3 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
+                <a class="dropdown-item" href="doc-4.html" target="_blank">Docs Layout 4 <i class="fa fa-external-link-square-alt text-muted small opacity-30 ml-1"></i></a>
+            </div>
+        </li>*@
 
                     </ul>
                     <partial name="_LoginPartial" />
@@ -151,7 +154,7 @@
                 <div class="col-md-12 col-lg-4 mb-4 mr-lg-auto">
                     <img class="mb-3" src="~/assets/img/logo-light.png" alt="Docs UI Kit" style="width: 170px;">
                     <p class="small font-weight-light mb-3">
-                        HelpdDesk Kit is a fully responsive helpdesk with a variety of documentation layouts,
+                        HelpDesk Kit is a fully responsive helpdesk with a variety of documentation layouts,
                         functional features and ready to use pages.
                     </p>
                 </div>
